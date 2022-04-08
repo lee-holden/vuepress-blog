@@ -28,9 +28,9 @@ module.exports = {
     // 备案
     record: '湘ICP备2022004764号-1',
     recordLink: 'https://beian.miit.gov.cn/',
-    cyberSecurityRecord: '公安部备案',
+    cyberSecurityRecord: '44011702000603',
     cyberSecurityLink:
-      'http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=41172602000151',
+      'http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44011702000603',
     subSidebar: 'auto',
     valineConfig: {
       appId: 'iGYBWlc6VJemQLF4K5MPC1rV-9Nh9j0Va', // your appId
