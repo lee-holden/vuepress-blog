@@ -145,3 +145,35 @@ ssh-keygen -t rsa -C 你的github邮箱地址
 cat id_rsa.pub 把里面的值复制到你的github个人资料 ssh keys 中
 然后就可以使用ssh地址了
 ```
+
+# 三、回退
+
+## 1. git log
+
+该命令显示从最近到最远的提交日志。每一次提交都有对应的 **commit id** 和 **commit message**。
+
+如果嫌弃输出的信息杂乱无章，那么加上  **--pretty=oneline**  参数试试吧！
+
+d 下一个， q 退出
+
+```bash
+git log --pretty=oneline
+```
+
+## 2.git reset --hard id
+
+根据 id 回退到指定的版本
+
+## 3.git reflog
+
+查看命令操作的历史
+
+# 四、ssh
+
+```bash
+ssh-keygen -t rsa -C "your_email@163.com"
+cat ~/.ssh/id_rsa.pub
+关联仓库起别名
+git remote add github xxx
+git push github master
+```

@@ -4,6 +4,7 @@ date: 2021-11-19
 sidebar: auto
 categories:
   - request
+  - Vue
 tags:
   - axios
 ---

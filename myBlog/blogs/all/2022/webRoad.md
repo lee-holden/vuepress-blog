@@ -3,7 +3,7 @@ title: B站前端路线资源整合
 date: 2022-1-15
 sidebar: auto
 categories:
-  - 前端
+  - 前端路线
 tags:
   - 资源
 ---

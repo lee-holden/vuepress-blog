@@ -1,5 +1,5 @@
 ---
-title: 部分代码编写优化
+title: JS 代码编写优化
 date: 2022-3-20
 sidebar: auto
 categories:
@@ -68,7 +68,7 @@ if ([1, 2, 3].includes(a)) {
 
 ```
 const fn = (name) => {
-  name = name || '林三心'
+  name = name || 'lhd'
   console.log(name)
 }
 ```
@@ -76,7 +76,7 @@ const fn = (name) => {
 ### ES6 默认参数(优化)
 
 ```
-const fn = (name = '林三心') => {
+const fn = (name = 'lhd') => {
   console.log(name)
 }
 ```
@@ -246,7 +246,7 @@ export default{
 
 ```
 this.setState({
-    name: '林三心'
+    name: 'lhd'
 })
 if (confition1) {
   this.setState({
@@ -264,7 +264,7 @@ if (condition2) {
 
 ```
 const model = {
-  name: '林三心'
+  name: 'lhd'
 }
 if (confition1) {
   model.age = 22
@@ -274,4 +274,43 @@ if (condition2) {
 }
 // 合并更新
 this.setData(model)
+```
+
+## 11、简短函数调用
+
+### 初始
+
+```
+// test2 test3 都是函数
+// 值为1时调用 test1(),否则调用 test2()
+var temp = 1
+if(temp == '1'){
+  test1()
+} else {
+  test2()
+}
+```
+
+### 优化
+
+```
+var temp = 1
+(temp=='1' ? test1:test2)()
+```
+
+## 12、给多个变量赋值
+
+### 初始
+
+```
+let test1,test2,test3
+test1 = 1
+test2 = 2
+test3 = 3
+```
+
+### 优化
+
+```
+let [test1,test2,test3] = [1,2,3]
 ```

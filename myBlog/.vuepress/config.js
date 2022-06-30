@@ -33,8 +33,8 @@ module.exports = {
       'http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44011702000603',
     subSidebar: 'auto',
     valineConfig: {
-      appId: 'iGYBWlc6VJemQLF4K5MPC1rV-9Nh9j0Va', // your appId
-      appKey: 'xrvYMnfV0uV9j88T9PqjyIwB', // your appKey
+      appId: 'iGYBWlc6VJemQLF4K5MPC1rV-9Nh9j0Va',
+      appKey: 'xrvYMnfV0uV9j88T9PqjyIwB',
     },
     noFoundPageByTencent: false,
     nav: [
@@ -89,7 +89,7 @@ module.exports = {
         text: '标签',
       },
     },
-    friendLink: [
+    /* friendLink: [
       {
         title: 'CSDN博客',
         desc: '偶尔会发布一些文章',
@@ -105,7 +105,7 @@ module.exports = {
           'https://gitee.com/donghe-li/images/raw/master/images/blog/logo.png',
         link: 'https://gitee.com/donghe-li',
       },
-    ],
+    ], */
     logo: '/logo.png',
     search: true,
     searchMaxSuggestions: 10,
@@ -181,29 +181,31 @@ module.exports = {
       },
     ],
     [
-      '@vuepress-reco/vuepress-plugin-bgm-player',
+      'meting',
       {
-        audios: [
-          {
-            name: ' スパークル',
-            artist: ' RADWIMPS',
-            url: 'https://cdn.jsdelivr.net/gh/dddhl/source/huohua.mp3',
-            cover: 'https://cdn.jsdelivr.net/gh/dddhl/source/huohua.jpg',
-          },
-          {
-            name: ' 我爱你',
-            artist: ' Ayasa绚沙',
-            url: 'https://cdn.jsdelivr.net/gh/dddhl/source/ILOVEU.mp3',
-            cover: 'https://cdn.jsdelivr.net/gh/dddhl/source/123.png',
-          },
-        ],
-        autoplay: true,
-        // 是否默认缩小
-        autoShrink: false,
-        // 缩小时缩为哪种模式
-        shrinkMode: 'float',
-        // 悬浮窗样式
-        floatStyle: { bottom: '10px', 'z-index': '999999' },
+        meting: {
+          // 歌单地址-> 如果输入可忽略server|type|mid
+          // 但是不知道为什么不写上这三个会报错, 所以我都写上了
+          auto: 'https://music.163.com/#/playlist?app_version=8.6.65&id=7390175823',
+          // 当前服务为netease -> 网易
+          server: 'netease',
+          // 类型为歌单
+          type: 'playlist',
+          // 歌单id
+          mid: '7390175823',
+        },
+        aplayer: {
+          // 歌单为随机
+          order: 'random',
+          // 0为不显示歌词
+          lrcType: 0,
+          // 音量
+          volume: 0.15,
+          // 开启迷你模式
+          mini: true,
+          // 自动播放
+          autoplay: true,
+        },
       },
     ],
     [
