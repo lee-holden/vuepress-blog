@@ -1,24 +1,44 @@
-# 个人博客网站代码
+# VuePress
 
-使用 Vuepress 搭建的一个静态博客网站
-网站演示：www.dddhl.cn
+一个 VuePress 搭建的静态博客网站。
 
-# 使用
+预览地址：
 
-## 初始化
+`注意：现已停止使用，请查看新仓库` [blog](https://github.com/lee-holden/blog)
 
-```bash
-npm init
+<img src="./myBlog/public/blog.png" style="border:35px solid #efefef;border-radius:5px;box-sizing:border-box;" />
+
+## 简介
+
+主题：
+
+- vuepress-theme-reco
+
+插件：
+
+- vuepress-plugin-bgm-player
+- vuepress-plugin-auto-sidebar
+- vuepress-plugin-cursor-effects
+- vuepress-plugin-dynamic-title
+- vuepress-plugin-meting
+- vuepress-plugin-nuggets-style-copy
+- vuepress-plugin-ribbon-animation
+- vuepress-plugin-sakura
+
+效果：
+
+## 使用说明
+
+nodejs <= 16
+
+```
+npm install
 ```
 
-## 启动
-
-```bash
+```
 npm run dev
 ```
 
-## 打包
-
-```bash
+```
 npm run build
 ```
