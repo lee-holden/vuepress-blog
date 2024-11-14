@@ -2,6 +2,7 @@ module.exports = {
   title: 'DDDHL - 樱花树下',
   description: '个人博客网站,分享前端知识点,记录美好生活~',
   dest: '.vuepress/dist',
+  base:'/vuepress-blog/',
   head: [
     [
       'link',
