@@ -2,7 +2,7 @@
 
 一个 VuePress 搭建的静态博客网站。
 
-预览地址：
+预览地址：[vuepress](https://lee-holden.github.io/vuepress-blog/)
 
 `注意：现已停止使用，请查看新仓库` [blog](https://github.com/lee-holden/blog)
 
